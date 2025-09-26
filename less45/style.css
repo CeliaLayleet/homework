@@ -1,0 +1,24 @@
+body {
+    font-size: 20px;
+}
+
+.elements {
+    overflow: auto;
+    height: 700px;
+    background: #efecfa;
+    border: 2px solid #575757;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.element {
+    display: inline-block;
+    text-align: left;
+    height: 250px;
+    width: 330px;
+    background: #c1a468;
+    padding: 35px;
+    margin: 15px 10px;
+    border-radius: 35px;
+    box-shadow: inset 1px 1px 9px 3px #3f3f3fc7;
+}

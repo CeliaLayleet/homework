@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+form {
+  max-width: 280px;
+  min-height: 400px;
+  padding: 15px 10px 10px 10px;
+  border: 1px solid #000;
+  background-color: #f0efef;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #b9ca9e;
+  background-color: #d0ffbe;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+textarea {
+  border: 1px solid #b9ca9e;
+  background-color: #d0ffbe;
+  border-radius: 4px;
+  resize: vertical;
+  max-height: 100px;
+}
+
+.span {
+  font-weight: 400;
+  display: block;
+}
+span {
+  margin-bottom: 7px;
+}
+
+#check {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  height: 25px;
+  width: 80px;
+  cursor: pointer;
+  border: 1px solid #b9ca9e;
+  background-color: #d0ffbe;
+}
+
+div {
+  margin-left: 12px;
+}

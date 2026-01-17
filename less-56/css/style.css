@@ -1,0 +1,43 @@
+html {
+  font-family: sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+    gap: 30px;
+  border-bottom: #b3acac solid 1px;
+}
+
+.header-logo {
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+}
+
+a {
+  cursor: pointer;
+  color: #000;
+}
+
+.header-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.tel {
+  text-decoration: none;
+}

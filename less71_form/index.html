@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form class="form" action="">
+      <fieldset>
+        <legend>Ваши личные данные</legend>
+
+        <label class="label" for="name">
+          <span class="span">Ваше имя</span>
+          <input
+            class="input"
+            id="name"
+            type="text"
+            placeholder="Имя"
+            name="name"
+            required
+          />
+        </label>
+
+        <label class="label" for="age">
+          <span class="span">Ваш возраст</span>
+          <input
+            class="input"
+            id="age"
+            type="number"
+            placeholder="возраст"
+            name="age"
+            inputmode="numeric"
+            required
+          />
+        </label>
+
+        <label class="label" for="phone">
+          <span class="span">Ваш номер телефона</span>
+          <input
+            class="input"
+            id="phone"
+            type="tel"
+            placeholder="Номер телефона"
+            name="phone"
+            inputmode="tel"
+            required
+          />
+        </label>
+
+        <label class="label" for="mail">
+          <span class="span">Ваша почта</span>
+          <input
+            class="input"
+            id="mail"
+            type="email"
+            placeholder="Почта"
+            name="email"
+            inputmode="email"
+            required
+            disabled
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend class="span">Сообщение</legend>
+        <textarea
+          class="textarea"
+          name="message"
+          id="message"
+          placeholder="Ваше сообщение"
+          
+        ></textarea>
+      </fieldset>
+      <label class="label label-check" for="check">
+        <input
+          id="check"
+          class="checkbox"
+          type="checkbox"
+          name="third"
+          value="third"
+          required
+          checked
+        />
+        <span class="checkbox-span">Я принимаю правила</span>
+      </label>
+      <button class="button">Отправить</button>
+    </form>
+  </body>
+</html>

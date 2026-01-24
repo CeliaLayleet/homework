@@ -44,6 +44,7 @@ legend {
   width: 100%;
   border-radius: 7px;
   margin-bottom: 10px;
+   resize: vertical;
 }
 
 .input:disabled,
@@ -120,3 +121,4 @@ legend {
   outline: 2px solid #8376e2;
   outline-offset: 1px;
 }
+

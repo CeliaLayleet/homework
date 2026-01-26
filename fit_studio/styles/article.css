@@ -1,31 +1,8 @@
-html {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 300;
-}
-
-body * {
-  box-sizing: border-box;
-}
-
 .article {
   padding-top: 80px;
   margin-bottom: 120px;
 }
 
-.container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
 .article-title {
   max-width: 630px;
@@ -46,7 +23,8 @@ h6 {
   font-size: 36px;
 }
 
-.article-text {
+.article-text,
+.article-item {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -57,6 +35,10 @@ h6 {
 
 .article-text-mb {
   margin-bottom: 80px;
+}
+
+.article-text:last-child {
+  margin-bottom: 0;
 }
 
 .article-decor-wrapper {
@@ -109,13 +91,17 @@ h6 {
 }
 
 .article-list {
-  margin-top: 0;
-  padding-left: 16px;
+  margin-top: 20px;
+  padding-left: 18px;
   margin-bottom: 80px;
 }
 
 .article-item {
   margin-bottom: 12px;
+}
+
+.article-item:last-child {
+  margin-bottom: 0;
 }
 
 .article-item::marker {

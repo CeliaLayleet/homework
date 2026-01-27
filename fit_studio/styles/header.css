@@ -8,20 +8,15 @@
   border-bottom: 1px solid #d3cbd9;
 }
 
-.phone {
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: right;
-  color: #858e8a;
-}
-
-.phone p {
+.text-sub p {
   margin-bottom: 8px;
 }
 
-.phone a {
+.phone {
+  text-align: right;
+}
+
+.text-sub a {
   font-weight: 500;
   font-size: 18px;
   color: #2c332f;
@@ -29,5 +24,5 @@
 }
 
 .phone a:hover {
-  color: #3596ED;
+  color: #3596ed;
 }

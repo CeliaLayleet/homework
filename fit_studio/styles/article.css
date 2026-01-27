@@ -3,22 +3,6 @@
   margin-bottom: 120px;
 }
 
-
-.article-title {
-  max-width: 630px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 115%;
-  text-transform: uppercase;
-  color: #2c332f;
-  margin-bottom: 40px;
-}
-
-.article-title-lerge {
-  font-size: 48px;
-}
-
 .article-title-medium {
   font-size: 36px;
 }
@@ -111,5 +95,4 @@
 
 .article-video {
   width: 100%;
-
 }

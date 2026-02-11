@@ -4,11 +4,11 @@
 }
 
 .section,
-.article-text-mb {
+.opening__text--mb {
   margin-bottom: 80px;
 }
 
-.section:last-child {
+.review {
   margin-bottom: 0;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .article-text,
-.article-item {
+.group-classes__item {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -26,30 +26,30 @@
   margin-bottom: 20px;
 }
 
-.article-text-mb {
+.opening__text--mb {
   margin-bottom: 80px;
 }
 
-.article-text-last {
+.review__text {
   margin-top: 40px;
   margin-bottom: 0;
 }
 
-.article-decor-wrapper {
+.article__decor-wrapper {
   position: relative;
 }
 
-.article-decor-wrapper-1::before {
+.opening__decor-wrapper::before {
   top: 100px;
   left: 0;
 }
 
-.article-decor-wrapper-2::before {
+.review__decor-wrapper::before {
   right: 0;
   bottom: 136px;
 }
 
-.article-play-button {
+.review__play-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,30 +77,26 @@
   transition: opacity 0.2s background-color 0.2s;
 }
 
-.article-play-button:hover {
+.review__play-button:hover {
   opacity: 0.85;
   background-color: #3596ed;
 }
 
-.article-play-button:not(:disabled):active {
+.review__play-button:not(:disabled):active {
   background-color: #1575c9;
 }
 
-.article-text-2 {
+.group-classes__text {
   max-width: 744px;
 }
 
-.article-list {
+.group-classes__list {
   margin-top: 20px;
   padding-left: 18px;
 }
 
-.article-item {
+.group-classes__item {
   margin-bottom: 12px;
-}
-
-.article-item:last-child {
-  margin-bottom: 0;
 }
 
 .article-item::marker {
@@ -108,17 +104,18 @@
   font-size: 22px;
 }
 
-.article-video {
+.review__video {
   width: 100%;
 }
 
 @media (width <= 768px) {
-  .article-decor-wrapper::before {
+  .article__decor-wrapper::before {
     display: none;
   }
 
-  .section:not(:last-child),
-  .article-text-mb {
+  .opening,
+  .group-classes,
+  .opening__text--mb {
     margin-bottom: 60px;
   }
 
@@ -133,7 +130,7 @@
     padding-bottom: 80px;
   }
 
-  .title-large {
+  .opening__title {
     font-size: 32px;
   }
 
@@ -141,17 +138,18 @@
     font-size: 28px;
   }
 
-  .section:not(:last-child),
-  .article-text-mb {
+  .opening,
+  .group-classes,
+  .opening__text--mb {
     margin-bottom: 40px;
   }
 
-  .article-play-button {
+  .review__play-button {
     width: 50px;
     height: 50px;
   }
 
-  .article-play-button img {
+  .review__play-polygon {
     width: 18px;
     height: 18px;
   }

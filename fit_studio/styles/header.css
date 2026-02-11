@@ -1,28 +1,28 @@
-.header-inner {
+.header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   gap: 10px;
   border-bottom: 1px solid #d3cbd9;
 }
 
-.text-sub p {
+.header__phone-text {
   margin-bottom: 8px;
 }
 
-.phone {
+.header__phone {
   text-align: right;
 }
 
-.text-sub a {
+.header__phone-link {
   font-weight: 500;
   font-size: 18px;
   color: #2c332f;
@@ -31,6 +31,6 @@
   transition: color 0.2s;
 }
 
-.phone a:hover {
+.header__phone a:hover {
   color: #3596ed;
 }

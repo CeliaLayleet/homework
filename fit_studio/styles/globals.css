@@ -9,8 +9,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-width: 375px;
   min-height: 100vh;
 }
@@ -19,7 +19,7 @@ body {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -40,7 +40,7 @@ img {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container {
@@ -73,6 +73,10 @@ img {
   transition: opacity 0.2s background-color 0.2s;
 }
 
+.button--secondary {
+  background-color: transparent;
+}
+
 .button:hover {
   opacity: 0.85;
 }
@@ -87,7 +91,7 @@ button.button:disabled {
 }
 
 .section {
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 }
 
 .title-large {
@@ -118,7 +122,7 @@ button.button:disabled {
   color: #858e8a;
 }
 
-  .decor::before {
+.decor::before {
   content: "";
   position: absolute;
   z-index: -1;

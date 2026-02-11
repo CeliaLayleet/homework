@@ -294,6 +294,10 @@
         flex-basis: 100%;
     max-width: 400px;
   }
+  
+  .decor::before {
+    display: none;
+  }
 }
 
 @media (width <=576px) {
@@ -314,4 +318,5 @@
     max-width: 125px;
     font-size: 14px;
   }
+
 }

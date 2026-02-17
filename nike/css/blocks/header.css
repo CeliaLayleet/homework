@@ -3,6 +3,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: var(--layer-1);
   padding-block: 32px;
   transition: box-shadow var(--transition-time);
   background-color: var(--bg-color);
@@ -43,15 +44,15 @@
     box-shadow: -2px 0 20px var(--shadow-color);
     opacity: 0;
     visibility: hidden;
+        transition:
+      right var(--transition-time), opacity var(--transition-time),
+      visibility var(--transition-time);
   }
 
   .header__menu--open {
     right: 0;
     opacity: 1;
     visibility: visible;
-    transition:
-      right var(--transition-time) opacity var(--transition-time),
-      visibility var(--transition-time);
   }
 
   .header__menu .menu__list {

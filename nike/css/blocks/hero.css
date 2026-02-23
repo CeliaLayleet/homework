@@ -22,6 +22,7 @@
   flex-direction: column;
 }
 
+
 @media (width > 768px) {
   .hero__container {
     padding-top: 60px;

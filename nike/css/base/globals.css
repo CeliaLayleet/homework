@@ -38,7 +38,7 @@ button:focus-visible {
 }
 
 .text-light {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .text-regular {
@@ -51,4 +51,24 @@ button:focus-visible {
   font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
   text-transform: uppercase;
   color: var(--main-color);
+}
+
+@media (width > 576px) {
+  .section {
+    padding-bottom: 140px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <= 576px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
 }

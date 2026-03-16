@@ -1,0 +1,24 @@
+:root {
+  /* font-family */
+  --font-family: "Inter", sans-serif;
+  --second-family: "Readex Pro", sans-serif;
+
+  /* colors */
+  --main-color: #000;
+  --bg-color: #F5F5F5;
+  --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+
+  /* container */
+  --container-width: 1350px;
+  --container-padding: 15px;
+
+  /* transitions */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

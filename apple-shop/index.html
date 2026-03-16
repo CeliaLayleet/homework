@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALIFORNIA</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./icons/apple.ico" type="image/x-icon" />
+    <script defer src="./js/index.js" type="module"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo header__logo">
+          <img
+            class="logo__img"
+            src="./icons/logo-icon.svg"
+            width="170"
+            height="21"
+            alt="Логотип CALIFORNIA"
+          />
+        </a>
+        <nav class="header__menu" id="header__menu" aria-label="Главное меню">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#all-products">all products</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#Solutions"
+                >Solutions
+                <svg width="12" height="8">
+                  <use
+                    class="header__arrow-down-icon"
+                    href="./icons/sprite.svg#arrow-down"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#ABOUT">ABOUT</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#Support">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__controls">
+          <button
+            class="header__actions-button"
+            title="Поиск"
+            aria-label="Поиск"
+          >
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/sprite.svg#search"
+              ></use>
+            </svg>
+          </button>
+          <button
+            class="header__actions-button"
+            title="Корзина"
+            aria-label="Корзина"
+          >
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/sprite.svg#cart"
+              ></use>
+            </svg>
+          </button>
+          <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+            <svg width="24" height="24">
+              <use
+                class="burger__icon-menu"
+                href="./icons/sprite.svg#burger"
+              ></use>
+              <use
+                class="burger__icon-cross"
+                href="./icons/sprite.svg#cross"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

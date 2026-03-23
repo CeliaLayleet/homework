@@ -1,6 +1,6 @@
 import BurgerMenu from "./burger.js";
 import DropDown from "./drop-down.js";
-import SearchModal from "./search.js";
+// import SearchModal from "./search.js";
 
 new BurgerMenu({
   BURGER: "burger",
@@ -25,9 +25,9 @@ new DropDown({
   ACTIVE_CLASS: "is-active",
 });
 
-new SearchModal({
-  BUTTON: ".header__actions-button",
-  MODAL: "#searchModal",
-  CLOSE_BTN: "#closeSearch",
-  NO_SCROLL_CLASS: "page__body--no-scroll"
-});
+// new SearchModal({
+//   BUTTON: ".header__actions-button",
+//   MODAL: "#searchModal",
+//   CLOSE_BTN: "#closeSearch",
+//   NO_SCROLL_CLASS: "page__body--no-scroll"
+// });

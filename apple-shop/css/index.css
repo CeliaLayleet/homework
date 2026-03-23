@@ -6,4 +6,5 @@
 
 /* blocks */
 @import "./blocks/header.css";
-@import "./blocks/burger.css"
+@import "./blocks/burger.css";
+@import "./blocks/search-modal.css";

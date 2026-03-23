@@ -26,15 +26,25 @@
               <a class="header__menu-link" href="#all-products">all products</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#Solutions"
-                >Solutions
-                <svg width="12" height="8">
-                  <use
-                    class="header__arrow-down-icon"
-                    href="./icons/sprite.svg#arrow-down"
-                  ></use>
-                </svg>
-              </a>
+              <div class="header__dropdown">
+                <button class="header__drop-button">
+                  <a class="header__menu-link" href="#Solutions"
+                    >Solutions
+                    <svg width="12" height="8">
+                      <use
+                        class="header__arrow-down-icon"
+                        href="./icons/sprite.svg#arrow-down"
+                      ></use>
+                    </svg>
+                  </a>
+                </button>
+                <div class="header__dropdown-content">
+                  <a class="header__menu-link" href="#">MacBook Pro</a>
+                  <a class="header__menu-link" href="#">MacBook Air</a>
+                  <a class="header__menu-link" href="#">iPad</a>
+                  <a class="header__menu-link" href="#">iphone</a>
+                </div>
+              </div>
             </li>
             <li class="header__menu-item">
               <a class="header__menu-link" href="#ABOUT">ABOUT</a>
@@ -69,7 +79,12 @@
               ></use>
             </svg>
           </button>
-          <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header__menu"
+          >
             <svg width="24" height="24">
               <use
                 class="burger__icon-menu"
@@ -84,5 +99,18 @@
         </div>
       </div>
     </header>
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal__content">
+        <button class="search-modal__close" id="closeSearch">&times;</button>
+        <form class="search-modal__form">
+          <input
+            type="search"
+            placeholder="Что ищем?"
+            class="search-modal__input"
+          />
+          <button type="submit" class="search-modal__submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

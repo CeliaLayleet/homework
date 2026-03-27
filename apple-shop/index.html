@@ -59,6 +59,8 @@
             class="header__actions-button"
             title="Поиск"
             aria-label="Поиск"
+            data-modal-button="search"
+            data-modal-speed="300"
           >
             <svg width="24" height="24">
               <use
@@ -99,17 +101,32 @@
         </div>
       </div>
     </header>
-    <div class="search-modal" id="searchModal">
-      <div class="search-modal__content">
-        <button class="search-modal__close" id="closeSearch">&times;</button>
-        <form class="search-modal__form">
-          <input
-            type="search"
-            placeholder="Что ищем?"
-            class="search-modal__input"
-          />
-          <button type="submit" class="search-modal__submit">Найти</button>
-        </form>
+    <div class="modal">
+      <div class="modal__window search-modal" data-modal-window="search">
+        <button
+          class="modal__close"
+          aria-label="Закрыть"
+          title="Закрыть"
+          data-modal-close
+        >
+          <svg width="24" height="24">
+            <use href="./icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="modal__content search-modal__content">
+          <form class="search-modal__form">
+            <label class="search-modal__label">
+              <input
+                class="search-modal__input"
+                type="search"
+                placeholder="Search"
+                name="search"
+                required
+              />
+            </label>
+            <button type="submit" class="search-modal__submit">Find</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

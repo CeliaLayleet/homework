@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALIFORNIA</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="shortcut icon" href="./icons/apple.ico" type="image/x-icon" />
+        <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
     <script defer src="./js/index.js" type="module"></script>
   </head>
   <body class="page__body">
@@ -101,6 +109,87 @@
         </div>
       </div>
     </header>
+    <section id="new-phones" class="new-phones section">
+      <div class="container">
+        <div class="swiper new-phones__slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide new-phones__slide">
+              <div class="new-phones__slide-inner">
+                  <div class="new-phones__slide-text">
+                    <h1 class="new-phones__title">The new phones are here take a look.
+                    </h1>
+                    <p class="new-phones__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                    <button class="new-phones__button">Explore</button>
+                  </div>
+                <picture>
+                  <source srcset="./images/new-phones-slide-1.webp">
+                  <img src="./images/new-phones-slide-1.png" width="647" height="550" alt="3 phones apple">
+                </picture>
+              </div>
+            </div>
+
+            <div class="swiper-slide new-phones__slide">
+              <div class="new-phones__slide-inner">
+                <div class="new-phones__slide-text">
+                    <h1 class="new-phones__title">The new phones are here take a look.
+                    </h1>
+                    <p class="new-phones__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                    <button class="new-phones__button">Explore</button>
+                  </div>
+                <picture>
+                  <source srcset="./images/new-phones-slide-2.webp">
+                  <img src="./images/new-phones-slide-2.png" width="650" height="550" alt="Iphone 17 green">
+                </picture>
+              </div>
+            </div>
+
+            <div class="swiper-slide new-phones__slide">
+              <div class="new-phones__slide-inner">
+                <div class="new-phones__slide-text">
+                    <h1 class="new-phones__title">The new phones are here take a look.
+                    </h1>
+                    <p class="new-phones__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                    <button class="new-phones__button">Explore</button>
+                  </div>
+                <picture>
+                  <source srcset="./images/new-phones-slide-3.webp">
+                  <img src="./images/new-phones-slide-3.png" width="445" height="574" alt="Iphone 17 Pro Max orange">
+                </picture>
+              </div>
+            </div>
+
+              <div class="swiper-pagination new-phones__swiper-pagination">
+              </div>
+              <div class="new-phones__swiper-button--prev">
+                <button
+                class="product__slider-button product__slider-button--prev"
+                aria-label="Предыдущий слайд"
+              >
+                <svg width="14" height="26">
+                  <use
+                    class="product__slider-button-icon"
+                    href="./icons/main-sprite.svg#arrow"
+                  ></use>
+                </svg>
+              </button>
+              </div>
+              <div class="new-phones__swiper-button--next">
+                <button
+                class="product__slider-button product__slider-button--next"
+                aria-label="Следующий слайд"
+              >
+                <svg width="14" height="26">
+                  <use
+                    class="product__slider-button-icon"
+                    href="./icons/main-sprite.svg#arrow"
+                  ></use>
+                </svg>
+              </button>
+              </div>
+        </div>
+      </div>
+    </section>
     <div class="modal">
       <div class="modal__window search-modal" data-modal-window="search">
         <button

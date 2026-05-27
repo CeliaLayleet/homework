@@ -13,6 +13,7 @@
 
 .header__dropdown {
   position: relative;
+  z-index: var(--layer-2);
 }
 
 .header__dropdown-content {
@@ -47,7 +48,7 @@
 }
 
 .header__dropdown-content .header__menu-link:hover {
-  background-color: #dce5e2;
+  background-color: var(--accent-color);
 }
 
 .header__dropdown:hover .header__dropdown-content {

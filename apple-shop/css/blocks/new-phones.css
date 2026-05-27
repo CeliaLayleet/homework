@@ -1,0 +1,29 @@
+.new-phones {
+  margin-block: 28px;
+}
+
+.new-phones__slider {
+      background-color: var(--accent-color);
+  border-radius: 32px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  
+}
+
+.new-phones__slide-inner {
+
+}
+
+.new-phones__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 120%;
+}
+
+.new-phones__text {
+  font-family: var(--font-family);
+  font-size: 16px;
+}

@@ -1,6 +1,7 @@
 import BurgerMenu from "./burger.js";
 import DropDown from "./drop-down.js";
 import Modal from "./modal.js";
+import {newPhonesSlider} from "./new-phones-slider.js"
 
 new BurgerMenu({
   BURGER: "burger",
@@ -30,3 +31,6 @@ new Modal({
   PAGE_BODY: "page__body",
   PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
 });
+
+newPhonesSlider ();
+

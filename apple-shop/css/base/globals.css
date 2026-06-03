@@ -20,6 +20,7 @@
 }
 
 .section-title {
+  font-family: var(--second-family);
 }
 
 .text {
@@ -30,6 +31,7 @@
 img {
   -o-object-fit: cover;
   object-fit: cover;
+  width: 100%;
 }
 
 a:focus-visible,

@@ -7,7 +7,8 @@ export const newPhonesSlider = () => {
       forceToAxis: true,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".new-phones__swiper-pagination",
+      clickable: true,
     },
     navigation: {
       prevEl: ".new-phones__swiper-button--prev",

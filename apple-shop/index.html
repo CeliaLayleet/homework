@@ -112,6 +112,19 @@
     <section id="new-phones" class="new-phones section">
       <div class="container">
         <div class="swiper new-phones__slider">
+          <button
+            class="new-phones__swiper-button new-phones__swiper-button--prev new-phones__swiper-button--prev"
+            aria-label="Предыдущий слайд"
+            type="button"
+          >
+            <svg width="14" height="26">
+              <use
+                class="new-phones__slider-button-icon"
+                href="./icons/sprite.svg#arrow"
+              ></use>
+            </svg>
+          </button>
+
           <div class="swiper-wrapper">
             <div class="swiper-slide new-phones__slide">
               <div class="new-phones__slide-inner">
@@ -194,34 +207,25 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="swiper-pagination new-phones__swiper-pagination"></div> -->
-
           <button
-            class="product__slider-button product__slider-button--prev new-phones__swiper-button--prev"
-            aria-label="Предыдущий слайд"
-            type="button"
-          >
-            <svg width="14" height="26">
-              <use
-                class="product__slider-button-icon"
-                href="./icons/main-sprite.svg#arrow"
-              ></use>
-            </svg>
-          </button>
-
-          <button
-            class="product__slider-button product__slider-button--next new-phones__swiper-button--next"
+            class="new-phones__swiper-button new-phones__swiper-button--next"
             aria-label="Следующий слайд"
             type="button"
           >
             <svg width="14" height="26">
               <use
-                class="product__slider-button-icon"
-                href="./icons/main-sprite.svg#arrow"
+                class="new-phones__slider-button-icon"
+                href="./icons/sprite.svg#arrow"
               ></use>
             </svg>
           </button>
+
+          
+          <div class="swiper-pagination new-phones__swiper-pagination">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </section>

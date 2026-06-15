@@ -1,7 +1,7 @@
 import BurgerMenu from "./burger.js";
 import DropDown from "./drop-down.js";
 import Modal from "./modal.js";
-import {newPhonesSlider} from "./new-phones-slider.js"
+import {newPhonesSlider} from "./new-phones-slider.js";
 
 new BurgerMenu({
   BURGER: "burger",

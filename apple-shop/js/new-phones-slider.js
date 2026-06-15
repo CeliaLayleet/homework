@@ -6,10 +6,14 @@ export const newPhonesSlider = () => {
     mousewheel: {
       forceToAxis: true,
     },
+    
     pagination: {
       el: ".new-phones__swiper-pagination",
       clickable: true,
+      // dynamicBullets: true,
+
     },
+
     navigation: {
       prevEl: ".new-phones__swiper-button--prev",
       nextEl: ".new-phones__swiper-button--next",

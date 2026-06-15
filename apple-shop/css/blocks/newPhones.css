@@ -84,12 +84,6 @@
   position: absolute;
 }
 
-
-
-
-
-
-
 .new-phones__swiper-pagination {
   display: flex;
   justify-content: center;
@@ -202,7 +196,7 @@
   }
 
   .new-phones__slide-inner {
-    min-height: 635px;
+    min-height: 655px;
   }
 
   .new-phones__slide-text {

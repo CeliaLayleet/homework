@@ -3,6 +3,7 @@
   font-weight: 400;
   color: var(--main-color);
   scroll-behavior: smooth;
+  height: 10000px;
 }
 
 .page__body {
@@ -35,7 +36,8 @@
 img {
   -o-object-fit: cover;
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a:focus-visible,

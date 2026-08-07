@@ -14,7 +14,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
       defer
     ></script>
-    <script defer src="./js/index.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
   </head>
   <body class="page__body">
     <header class="header">
@@ -35,16 +35,18 @@
             </li>
             <li class="header__menu-item">
               <div class="header__dropdown">
-                <button class="header__drop-button">
-                  <a class="header__menu-link" href="#Solutions"
-                    >Solutions
-                    <svg width="12" height="8">
-                      <use
-                        class="header__arrow-down-icon"
-                        href="./icons/sprite.svg#arrow-down"
-                      ></use>
-                    </svg>
-                  </a>
+                <button
+                  class="header__drop-button"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  <span class="header__menu-link">Solutions</span>
+                  <svg width="12" height="8" aria-hidden="true">
+                    <use
+                      class="header__arrow-down-icon"
+                      href="./icons/sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
                 </button>
                 <div class="header__dropdown-content">
                   <a class="header__menu-link" href="#">MacBook Pro</a>
@@ -156,9 +158,9 @@
             <div class="swiper-slide new-phones__slide">
               <div class="new-phones__slide-inner">
                 <div class="new-phones__slide-text">
-                  <h1 class="new-phones__title">
+                  <h2 class="new-phones__title">
                     The new phones are here take a look.
-                  </h1>
+                  </h2>
                   <p class="new-phones__text text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Scelerisque in est dui, aliquam, tempor. Faucibus morbi
@@ -183,9 +185,9 @@
             <div class="swiper-slide new-phones__slide">
               <div class="new-phones__slide-inner">
                 <div class="new-phones__slide-text">
-                  <h1 class="new-phones__title">
+                  <h2 class="new-phones__title">
                     The new phones are here take a look.
-                  </h1>
+                  </h2>
                   <p class="new-phones__text text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Scelerisque in est dui, aliquam, tempor. Faucibus morbi
@@ -220,11 +222,118 @@
             </svg>
           </button>
 
-          
           <div class="swiper-pagination new-phones__swiper-pagination">
             <span></span>
             <span></span>
             <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-categories section">
+      <div class="container">
+        <div class="product-categories__text-wrapper">
+          <h2 class="product-categories__title section-title">
+            Shop our latest offers and categories
+          </h2>
+          <p class="product-categories__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="product-categories__wrapper">
+          <div class="product-categories__card-laptop product-categories__card">
+            <div class="product-categories__card-img">
+              <picture>
+                <source srcset="./images/product-categories-laptop.webp" />
+                <img
+                  class="product-categories__img"
+                  src="./images/product-categories-laptop.png"
+                  width="500"
+                  height="377"
+                  alt="MacBook Air M1"
+                />
+              </picture>
+            </div>
+            <div
+              class="product-categories__card-text-laptop product-categories__card-text"
+            >
+              <h3 class="product-categories__card-title">Laptops</h3>
+              <p class="product-categories__card-slogan text">
+                True Laptop Solution
+              </p>
+            </div>
+          </div>
+
+          <div class="product-categories__card-phones product-categories__card">
+            <div class="product-categories__card-img">
+              <picture>
+                <source srcset="./images/product-categories-phones.webp" />
+                <img
+                  class="product-categories__img"
+                  src="./images/product-categories-phones.png"
+                  width="405"
+                  height="367"
+                  alt="IPhone"
+                />
+              </picture>
+            </div>
+            <div
+              class="product-categories__card-text-phones product-categories__card-text"
+            >
+              <h3 class="product-categories__card-title">Phones</h3>
+              <p class="product-categories__card-slogan text">
+                Your day to day life
+              </p>
+            </div>
+          </div>
+
+          <div class="product-categories__card-tablet product-categories__card">
+            <div
+              class="product-categories__card-text-tablet product-categories__card-text"
+            >
+              <h3 class="product-categories__card-title">Tablet</h3>
+              <p class="product-categories__card-slogan text">
+                Empower your work
+              </p>
+            </div>
+            <div class="product-categories__card-img">
+              <picture>
+                <source srcset="./images/product-categories-tablet.webp" />
+                <img
+                  class="product-categories__img"
+                  src="./images/product-categories-tablet.png"
+                  width="381"
+                  height="270"
+                  alt="iPad"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <div class="product-categories__card-watch product-categories__card">
+            <div class="product-categories__card-img">
+              <picture>
+                <source srcset="./images/product-categories-watch-fool.webp" />
+                <img
+                  class="product-categories__img"
+                  src="./images/product-categories-watch-fool.png"
+                  width="647"
+                  height="550"
+                  alt="apple watch"
+                />
+              </picture>
+            </div>
+            <div
+              class="product-categories__card-text-watch product-categories__card-text"
+            >
+              <h3 class="product-categories__card-title">Watch</h3>
+              <p class="product-categories__card-slogan text">
+                Not just stylisht
+              </p>
+            </div>
           </div>
         </div>
       </div>

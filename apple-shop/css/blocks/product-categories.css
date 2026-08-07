@@ -1,0 +1,169 @@
+.product-categories {
+  --container-width: 1380px;
+  padding-bottom: 6px;
+}
+
+.product-categories__text-wrapper {
+  padding-top: 47px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-categories__title {
+  margin-bottom: 9px;
+}
+
+.product-categories__text {
+  font-family: var(--second-family);
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  max-width: 628px;
+}
+
+.product-categories__wrapper {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 270px;
+  gap: 17px;
+}
+
+.product-categories__card {
+  display: flex;
+  max-height: 792px;
+  overflow: hidden;
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.product-categories__img {
+  object-fit: contain;
+}
+
+.product-categories__card-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 128%;
+  color: #000;
+}
+
+.product-categories__card-slogan {
+  font-family: var(--second-family);
+  font-size: 32px;
+  color: #000;
+}
+
+.product-categories__card-laptop {
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 0 63px 0 63px; */
+  padding-left: clamp(1px, -2.4545px + 5.4545vw, 63px);
+  padding-right: clamp(1px, -2.4545px + 5.4545vw, 63px);
+  grid-column: 6 span;
+  grid-row: 2 span;
+  max-height: 472px;
+}
+
+.product-categories__card-text-laptop {
+  text-align: right;
+  align-self: flex-end;
+  max-width: 200px;
+}
+
+.product-categories__card-phones,
+.product-categories__card-tablet {
+  grid-column: 3 span;
+  grid-row: 3 span;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 42px;
+}
+
+.product-categories__card-text-phones,
+.product-categories__card-text-tablet {
+  text-align: center;
+  max-width: 250px;
+}
+
+.product-categories__card-watch {
+  grid-column: 6 span;
+  align-items: center;
+  justify-content: center;
+  padding-left: clamp(1px, -27.7273px + 8.9773vw, 80px);
+  padding-right: clamp(1px, -21.5455px + 7.0455vw, 63px);
+}
+
+.product-categories__card-text-watch {
+  text-align: center;
+  min-width: 128px;
+}
+
+@media (width <= 992px) {
+  .product-categories__card {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 792px;
+  }
+
+  .product-categories__card-slogan {
+    font-size: 28px;
+  }
+
+  .product-categories__card-laptop {
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0;
+    grid-column: 6 span;
+  }
+
+  .product-categories__card-phones {
+    grid-row: 2 span;
+  }
+
+  .product-categories__card-watch {
+    grid-column: 9 span;
+  }
+
+  .product-categories__card-text {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+@media (width <= 768px) {
+  .product-categories__card-laptop {
+    /* flex-direction: row; */
+    grid-column: 12 span;
+    gap: 75px;
+  }
+  .product-categories__card-phones,
+  .product-categories__card-tablet {
+    grid-column: 6 span;
+    grid-row: 3 span;
+    max-height: 100%;
+  }
+  .product-categories__card-watch {
+    grid-column: 12 span;
+    grid-row: 1 span;
+  }
+
+  .product-categories__card-text-watch {
+    /* min-width: 140px; */
+  }
+}
+
+@media (width <= 576px) {
+  .product-categories__card-laptop {
+    gap: 80px;
+  }
+
+  .product-categories__card-phones,
+  .product-categories__card-tablet {
+    grid-row: 2 span;
+  }
+}

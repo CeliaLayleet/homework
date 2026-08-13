@@ -94,7 +94,7 @@
   line-height: 120%;
   text-transform: capitalize;
   text-align: center;
-  color: var(--main-color);
+  color: #000;
 }
 
 .header__controls {

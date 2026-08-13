@@ -17,7 +17,7 @@
   top: 50%;
   width: 14px;
   height: 26px;
-  color: var(--main-color);
+  color: #000;
 }
 
 .new-phones__swiper-button--prev {
@@ -48,6 +48,8 @@
 
 .new-phones__text {
   font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 120%;
   font-size: 16px;
   max-width: 575px;
   margin-bottom: 30px;
@@ -73,10 +75,10 @@
   }
 }
 
-  .new-phones__button:active {
-    transform: scale(1.05);
-    background-color: var(--bg-color);
-  }
+.new-phones__button:active {
+  transform: scale(1.05);
+  background-color: var(--bg-color);
+}
 
 .new-phones__img {
   position: absolute;
@@ -94,14 +96,13 @@
   background-color: #000;
   opacity: 1;
   margin: 0 !important;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 /* неактивные */
-.new-phones__swiper-pagination .swiper-pagination-bullet:not(
-  .swiper-pagination-bullet-active
-) {
-  opacity: .3;
+.new-phones__swiper-pagination
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  opacity: 0.3;
 }
 
 /* активная */
@@ -171,18 +172,17 @@
     font-size: 58px;
   }
 
-
-    .new-phones__swiper-pagination {
-      gap: 34px;
+  .new-phones__swiper-pagination {
+    gap: 34px;
   }
 
   .new-phones__swiper-pagination .swiper-pagination-bullet {
-      width: 194px;
+    width: 194px;
   }
 }
 
 @media (width <= 768px) {
-    .new-phones__swiper-button--prev {
+  .new-phones__swiper-button--prev {
     left: 7px;
   }
 

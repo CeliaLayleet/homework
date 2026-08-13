@@ -1,9 +1,8 @@
 .page {
   font-family: var(--font-family);
   font-weight: 400;
-  color: var(--main-color);
   scroll-behavior: smooth;
-  height: 10000px;
+  /* height: 10000px; */
 }
 
 .page__body {
@@ -26,11 +25,7 @@
   line-height: 125%;
   text-align: center;
   color: #000;
-}
-
-.text {
-  font-weight: 400;
-  line-height: 120%;
+  margin-bottom: 9px;
 }
 
 img {

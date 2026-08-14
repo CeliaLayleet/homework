@@ -38,4 +38,9 @@
       <path d="M1 1L13 13L1 25" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
   </symbol>
+
+  <symbol id="arrow-up-right" viewBox="0 0 30 28" fill="none">
+  <path d="M7.31464 20.4816L21.9444 6.82715" stroke="#151A1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M7.31464 6.82715H21.9444V20.4816" stroke="#151A1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
 </svg>

@@ -76,3 +76,15 @@
   max-width: 100%;
   height: auto;
 }
+
+@media (width <= 768px) {
+ .product-highlights__text {
+  margin-bottom: 34px;
+ }
+}
+
+@media (width <= 576px) {
+ .product-highlights__text {
+  margin-bottom: 28px;
+ }
+}

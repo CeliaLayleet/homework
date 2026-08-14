@@ -60,3 +60,9 @@
   line-height: 120%;
   color: #000;
 }
+
+@media (width <= 576px) {
+  .best-selling__text {
+    margin-bottom: 8px;
+  }
+}

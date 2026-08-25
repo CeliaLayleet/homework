@@ -43,4 +43,16 @@
   <path d="M7.31464 20.4816L21.9444 6.82715" stroke="#151A1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M7.31464 6.82715H21.9444V20.4816" stroke="#151A1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
+
+  <symbol id="arrow-up-right-2" viewBox="0 0 21 18" fill="none">
+  <g clip-path="url(#clip0_1_354)">
+    <path d="M1.61539 16.6155L19.3846 1.38477" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M1.61539 1.38477H19.3846V16.6155" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <defs>
+    <clipPath id="clip0_1_354">
+      <rect width="21" height="18" fill="white" />
+    </clipPath>
+  </defs>
+</symbol>
 </svg>

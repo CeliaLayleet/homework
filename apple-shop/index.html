@@ -25,10 +25,14 @@
             src="./icons/logo-icon.svg"
             width="170"
             height="21"
-            alt="Логотип CALIFORNIA"
+            alt="logo CALIFORNIA"
           />
         </a>
-        <nav class="header__menu" id="header__menu" aria-label="Главное меню">
+        <nav
+          class="header__menu"
+          id="header__menu"
+          aria-label="Header Navigation"
+        >
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a class="header__menu-link" href="#all-products">all products</a>
@@ -261,13 +265,18 @@
           <div class="product-categories__card-laptop product-categories__card">
             <div class="product-categories__card-img">
               <picture>
+                <!-- <source
+                  media="(max-width: 992px)"
+                  srcset="./images/product-categories-laptop-fool.webp"
+                  type="image/webp"
+                /> -->
                 <source
                   srcset="./images/product-categories-laptop.webp"
                   type="image/webp"
                 />
                 <img
                   class="product-categories__img"
-                  src="./images/product-categories-laptop.png"
+                  src="./images/product-categories-laptop-fool.png"
                   width="500"
                   height="377"
                   alt="MacBook Air M1"
@@ -596,6 +605,216 @@
         </a>
       </div>
     </section>
+    <section class="search">
+      <div class="container">
+        <h2 class="search__title section-title">Looking for anything else?</h2>
+        <div class="search__form-wrap">
+          <form class="search__form">
+            <label class="search__label" for="search-input"> Search </label>
+            <svg class="search__icon" width="30" height="29" aria-hidden="true">
+              <use href="./icons/sprite.svg#search"></use>
+            </svg>
+            <input
+              class="search__input"
+              id="search-input"
+              name="search"
+              type="search"
+              placeholder="Search keyword"
+            />
+            <button
+              class="search__clear"
+              type="button"
+              aria-label="Clear search"
+            >
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./icons/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </form>
+
+          <ul class="search__tags">
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">iPhone</button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">Charger</button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">Gift</button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">
+                Google Pixel 3
+              </button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">Keyboard</button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">
+                13 Pro Max
+              </button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">
+                iPhone 12
+              </button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">Laptop</button>
+            </li>
+            <li class="search__tag">
+              <button class="search__tag-button" type="button">Mobile</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__wrap">
+          <h2 class="subscribe__title section-title">Never miss a thing</h2>
+          <p class="subscribe__text">
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </p>
+          <picture>
+            <source
+              srcset="./images/subscribe-gadgets.webp"
+              type="image.webp"
+            />
+            <img
+              class="subscribe__img"
+              src="./images/subscribe-gadgets.png"
+              width="233"
+              height="200"
+              alt="Apple Watch, MacBook, and two iPhones"
+            />
+          </picture>
+          <form class="subscribe__form" action="#" method="post">
+            <label class="subscribe__label" for="subscribe-email">
+              Email
+            </label>
+            <input
+              class="subscribe__input subscribe__text"
+              id="subscribe-email"
+              name="email"
+              type="email"
+              placeholder="Your email"
+              autocomplete="email"
+              required
+            />
+            <button class="subscribe__button subscribe__text" type="submit">
+              Sign up
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__info">
+            <a href="#" class="logo footer__logo">
+              <img
+                class="footer__logo-img"
+                src="./icons/logo-icon.svg"
+                width="181"
+                height="22"
+                alt="Logo CALIFORNIA"
+              />
+            </a>
+            <p class="footer__description">
+              Sign up for texts to be notified about our best offers on the
+              perfect gifts.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <nav class="footer__menu" aria-label="Footer Navigation">
+              <h3 class="footer__title">All products</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Phones</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Watch</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Tablet</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Laptop</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <nav class="footer__menu" aria-label="Footer Navigation">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">About</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <nav class="footer__menu" aria-label="Footer Navigation">
+              <h3 class="footer__title">Support</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Style Guide</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Licensing</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Change Log</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <nav class="footer__menu" aria-label="Footer Navigation">
+              <h3 class="footer__title">Follow Us</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Instagram</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Facebook</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">LinkedIn</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Youtube</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copyright">Made By:</span>
+          <a class="footer__author-link" href="#"
+            >Azwedo
+            <svg width="21" height="18">
+              <use href="./icons/sprite.svg#arrow-up-right-2"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
     <div class="modal">
       <div class="modal__window search-modal" data-modal-window="search">
         <button

@@ -1,5 +1,4 @@
 .header__container {
-  --container-width: 1294px;
   display: flex;
   align-items: center;
   justify-content: space-between;

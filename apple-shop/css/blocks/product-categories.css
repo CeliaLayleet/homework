@@ -38,6 +38,10 @@
     transform var(--transition-time);
 }
 
+.product-categories__card-img {
+  overflow: hidden;
+}
+
 @media (any-hover: hover) {
   .product-categories__card:hover {
     transform: scale(1.02);
@@ -67,7 +71,6 @@
 .product-categories__card-laptop {
   flex-direction: column;
   justify-content: space-between;
-  /* padding: 0 63px 0 63px; */
   padding-left: clamp(1px, -2.4545px + 5.4545vw, 63px);
   padding-right: clamp(1px, -2.4545px + 5.4545vw, 63px);
   grid-column: 6 span;
@@ -149,23 +152,20 @@
   }
 
   .product-categories__card-laptop {
-    /* flex-direction: row; */
     grid-column: 12 span;
     gap: 75px;
   }
+
   .product-categories__card-phones,
   .product-categories__card-tablet {
     grid-column: 6 span;
     grid-row: 3 span;
     max-height: 100%;
   }
+
   .product-categories__card-watch {
     grid-column: 12 span;
     grid-row: 1 span;
-  }
-
-  .product-categories__card-text-watch {
-    /* min-width: 140px; */
   }
 }
 

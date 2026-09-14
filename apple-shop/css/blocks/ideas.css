@@ -56,6 +56,10 @@
 }
 
 @media (width <= 992px) {
+  .ideas {
+    padding-block: 28px;
+  }
+
   .ideas__content {
     gap: 13px;
   }
@@ -85,7 +89,7 @@
 }
 
 @media (width <= 568px) {
-      .ideas__text {
+  .ideas__text {
     margin-bottom: 28px;
   }
 }

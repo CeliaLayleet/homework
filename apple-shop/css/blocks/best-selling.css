@@ -1,6 +1,5 @@
 .best-selling {
-  padding-top: 72px;
-  padding-bottom: 28px;
+  padding-block: 72px 28px;
 }
 
 .best-selling__text {
@@ -16,7 +15,7 @@
 .best-selling__products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
-  gap: clamp(8px, 0.7273px + 2.2727vw, 28px);
+  gap: 28px;
 }
 
 .best-selling__card {
@@ -61,8 +60,18 @@
   color: #000;
 }
 
+@media (width <= 992px) {
+  .best-selling {
+    padding-block: 28px 0;
+  }
+}
+
 @media (width <= 576px) {
   .best-selling__text {
     margin-bottom: 8px;
+  }
+
+  .best-selling__products {
+    gap: 8px;
   }
 }

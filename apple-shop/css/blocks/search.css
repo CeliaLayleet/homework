@@ -1,3 +1,7 @@
+.search {
+  padding-top: 19px;
+}
+
 .search__title {
   margin-bottom: 24px;
 }
@@ -6,7 +10,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 61px;
 }
 
 .search__form {
@@ -102,6 +105,12 @@
 @media (any-hover: hover) {
   .search__tag-button:hover {
     background-color: var(--accent-color);
+  }
+}
+
+@media (width <= 992px) {
+  .search {
+    padding-top: 0;
   }
 }
 

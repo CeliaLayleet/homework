@@ -77,14 +77,20 @@
   height: auto;
 }
 
+@media (width <= 992px) {
+  .product-highlights {
+    padding-block: 28px 0;
+  }
+}
+
 @media (width <= 768px) {
- .product-highlights__text {
-  margin-bottom: 34px;
- }
+  .product-highlights__text {
+    margin-bottom: 34px;
+  }
 }
 
 @media (width <= 576px) {
- .product-highlights__text {
-  margin-bottom: 28px;
- }
+  .product-highlights__text {
+    margin-bottom: 28px;
+  }
 }

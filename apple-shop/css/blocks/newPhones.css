@@ -217,6 +217,10 @@
 }
 
 @media (width <= 576px) {
+  .new-phones {
+    padding-bottom: 0;
+  }
+
   .new-phones__slide-inner {
     min-height: 595px;
   }
@@ -233,9 +237,9 @@
     margin-bottom: 9px;
   }
 
-.new-phones__text {
-  margin-bottom: 15px;
-}
+  .new-phones__text {
+    margin-bottom: 15px;
+  }
 
   .new-phones__img {
     width: 407px;

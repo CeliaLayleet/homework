@@ -263,19 +263,16 @@
 
         <div class="product-categories__wrapper">
           <div class="product-categories__card-laptop product-categories__card">
-            <div class="product-categories__card-img">
+            <div
+              class="product-categories__laptop-card-img product-categories__card-img"
+            >
               <picture>
-                <!-- <source
-                  media="(max-width: 992px)"
-                  srcset="./images/product-categories-laptop-fool.webp"
-                  type="image/webp"
-                /> -->
                 <source
                   srcset="./images/product-categories-laptop.webp"
                   type="image/webp"
                 />
                 <img
-                  class="product-categories__img"
+                  class="product-categories__laptop-img product-categories__img"
                   src="./images/product-categories-laptop-fool.png"
                   width="500"
                   height="377"
@@ -283,6 +280,7 @@
                 />
               </picture>
             </div>
+
             <div
               class="product-categories__card-text-laptop product-categories__card-text"
             >
@@ -294,21 +292,24 @@
           </div>
 
           <div class="product-categories__card-phones product-categories__card">
-            <div class="product-categories__card-img">
+            <div
+              class="product-categories__phones-card-img product-categories__card-img"
+            >
               <picture>
                 <source
                   srcset="./images/product-categories-phones.webp"
                   type="image/webp"
                 />
                 <img
-                  class="product-categories__img"
+                  class="product-categories__phones-img product-categories__img"
                   src="./images/product-categories-phones.png"
-                  width="405"
+                  width="432"
                   height="367"
-                  alt="IPhone"
+                  alt="iPhone"
                 />
               </picture>
             </div>
+
             <div
               class="product-categories__card-text-phones product-categories__card-text"
             >
@@ -326,17 +327,20 @@
               <h3 class="product-categories__card-title">Tablet</h3>
               <p class="product-categories__card-slogan">Empower your work</p>
             </div>
-            <div class="product-categories__card-img">
+
+            <div
+              class="product-categories__tablet-card-img product-categories__card-img"
+            >
               <picture>
                 <source
                   srcset="./images/product-categories-tablet.webp"
                   type="image/webp"
                 />
                 <img
-                  class="product-categories__img"
+                  class="product-categories__tablet-img product-categories__img"
                   src="./images/product-categories-tablet.png"
-                  width="381"
-                  height="270"
+                  width="498"
+                  height="425"
                   alt="iPad"
                 />
               </picture>
@@ -344,26 +348,29 @@
           </div>
 
           <div class="product-categories__card-watch product-categories__card">
-            <div class="product-categories__card-img">
+            <div
+              class="product-categories__watch-card-img product-categories__card-img"
+            >
               <picture>
                 <source
-                  srcset="./images/product-categories-watch-fool.webp"
+                  srcset="./images/product-categories-watch.webp"
                   type="image/webp"
                 />
                 <img
-                  class="product-categories__img"
-                  src="./images/product-categories-watch-fool.png"
+                  class="product-categories__watch-img product-categories__img"
+                  src="./images/product-categories-watch.png"
                   width="647"
                   height="550"
-                  alt="apple watch"
+                  alt="Apple Watch"
                 />
               </picture>
             </div>
+
             <div
               class="product-categories__card-text-watch product-categories__card-text"
             >
               <h3 class="product-categories__card-title">Watch</h3>
-              <p class="product-categories__card-slogan">Not just stylisht</p>
+              <p class="product-categories__card-slogan">Not just stylish</p>
             </div>
           </div>
         </div>
@@ -691,7 +698,7 @@
               alt="Apple Watch, MacBook, and two iPhones"
             />
           </picture>
-          <form class="subscribe__form" action="#" method="post">
+          <form class="subscribe__form" action="#">
             <label class="subscribe__label" for="subscribe-email">
               Email
             </label>
@@ -729,81 +736,132 @@
               perfect gifts.
             </p>
           </div>
+          <div class="footer__columns">
+            <div class="footer__column">
+              <nav class="footer__menu" aria-label="Footer Navigation">
+                <h3 class="footer__title">All products</h3>
 
-          <div class="footer__column">
-            <nav class="footer__menu" aria-label="Footer Navigation">
-              <h3 class="footer__title">All products</h3>
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Phones</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Watch</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Tablet</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Laptop</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Phones"
+                      >Phones</a
+                    >
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Watch"
+                      >Watch</a
+                    >
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Tablet"
+                      >Tablet</a
+                    >
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Laptop"
+                      >Laptop</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-          <div class="footer__column">
-            <nav class="footer__menu" aria-label="Footer Navigation">
-              <h3 class="footer__title">Company</h3>
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">About</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Support</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            <div class="footer__column">
+              <nav class="footer__menu" aria-label="Footer Navigation">
+                <h3 class="footer__title">Company</h3>
 
-          <div class="footer__column">
-            <nav class="footer__menu" aria-label="Footer Navigation">
-              <h3 class="footer__title">Support</h3>
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Style Guide</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Licensing</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Change Log</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="About"
+                      >About</a
+                    >
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Support"
+                      >Support</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-          <div class="footer__column">
-            <nav class="footer__menu" aria-label="Footer Navigation">
-              <h3 class="footer__title">Follow Us</h3>
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Instagram</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Facebook</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">LinkedIn</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Youtube</a>
-                </li>
-              </ul>
-            </nav>
+            <div class="footer__column">
+              <nav class="footer__menu" aria-label="Footer Navigation">
+                <h3 class="footer__title">Support</h3>
+
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a
+                      class="footer__menu-link"
+                      href="#"
+                      data-hover="Style Guide"
+                    >
+                      Style Guide
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a
+                      class="footer__menu-link"
+                      href="#"
+                      data-hover="Licensing"
+                    >
+                      Licensing
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a
+                      class="footer__menu-link"
+                      href="#"
+                      data-hover="Change Log"
+                    >
+                      Change Log
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Contact">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__column">
+              <nav class="footer__menu" aria-label="Footer Navigation">
+                <h3 class="footer__title">Follow Us</h3>
+
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a
+                      class="footer__menu-link"
+                      href="#"
+                      data-hover="Instagram"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Facebook">
+                      Facebook
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="LinkedIn">
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" data-hover="Youtube">
+                      Youtube
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="footer__bottom">
           <span class="footer__copyright">Made By:</span>
           <a class="footer__author-link" href="#"

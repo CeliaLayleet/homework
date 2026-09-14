@@ -20,7 +20,6 @@
 }
 
 .product-categories__wrapper {
-  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: 270px;
@@ -42,14 +41,14 @@
   overflow: hidden;
 }
 
+.product-categories__img {
+  object-fit: contain;
+}
+
 @media (any-hover: hover) {
   .product-categories__card:hover {
     transform: scale(1.02);
   }
-}
-
-.product-categories__img {
-  object-fit: contain;
 }
 
 .product-categories__card-title {
@@ -66,83 +65,143 @@
   font-weight: 400;
   line-height: 120%;
   color: #000;
-}
-
-.product-categories__card-laptop {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: clamp(1px, -2.4545px + 5.4545vw, 63px);
-  padding-right: clamp(1px, -2.4545px + 5.4545vw, 63px);
-  grid-column: 6 span;
-  grid-row: 2 span;
-  max-height: 472px;
-}
-
-.product-categories__card-text-laptop {
-  text-align: right;
-  align-self: flex-end;
   max-width: 200px;
 }
 
+/* laptop */
+
+.product-categories__card-laptop {
+  flex-direction: column;
+  align-items: end;
+  grid-column: 6 span;
+  grid-row: 2 span;
+  max-height: 472px;
+  padding-inline: 63px;
+}
+
+.product-categories__laptop-card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.product-categories__laptop-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-categories__card-text-laptop {
+  max-width: 192px;
+  text-align: end;
+}
+
+/* phone/tablet */
+
 .product-categories__card-phones,
 .product-categories__card-tablet {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   grid-column: 3 span;
   grid-row: 3 span;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
   gap: 42px;
+}
+
+.product-categories__phones-card-img {
+  position: relative;
+  width: 432px;
+  height: 367px;
+}
+.product-categories__tablet-card-img {
+  position: relative;
+  width: 498px;
+  height: 425px;
+}
+
+.product-categories__phones-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 67px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.product-categories__tablet-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .product-categories__card-text-phones,
 .product-categories__card-text-tablet {
   text-align: center;
-  max-width: 250px;
 }
+
+/* watch */
 
 .product-categories__card-watch {
   grid-column: 6 span;
   align-items: center;
-  justify-content: center;
-  padding-left: clamp(1px, -27.7273px + 8.9773vw, 80px);
-  padding-right: clamp(1px, -21.5455px + 7.0455vw, 63px);
+  padding-inline: 81px 63px;
 }
 
 .product-categories__card-text-watch {
-  text-align: center;
-  min-width: 128px;
+  text-align: end;
+  min-width: 110px;
 }
 
 @media (width <= 992px) {
+  .product-categories {
+    padding-top: 28px;
+  }
+
   .product-categories__card {
-    justify-content: center;
+    max-height: 100%;
     align-items: center;
-    text-align: center;
-    max-height: 792px;
+    padding-inline: 17px;
   }
 
   .product-categories__card-slogan {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .product-categories__card-laptop {
-    justify-content: flex-start;
-    gap: 50px;
-    padding: 0;
-    grid-column: 6 span;
+    grid-row: 1 span;
+    flex-direction: column;
+    align-items: end;
   }
 
-  .product-categories__card-phones {
+  .product-categories__card-phones,
+  .product-categories__card-tablet {
     grid-row: 2 span;
   }
 
-  .product-categories__card-watch {
-    grid-column: 9 span;
+  .product-categories__phones-card-img {
+    width: 256px;
+    height: 274px;
+  }
+  .product-categories__phones-img {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
   }
 
-  .product-categories__card-text {
-    text-align: center;
-    align-self: center;
+  .product-categories__tablet-card-img {
+    width: 348px;
+    height: 297px;
+  }
+
+  .product-categories__card-watch {
+    grid-row: 1 span;
+    grid-column: 6 span;
+  }
+
+  .product-categories__card-text-watch {
+    min-width: 90px;
   }
 }
 
@@ -152,34 +211,44 @@
   }
 
   .product-categories__card-laptop {
-    grid-column: 12 span;
-    gap: 75px;
+    grid-column: 6 span;
+    grid-row: 1 span;
+    flex-direction: column;
   }
-
   .product-categories__card-phones,
   .product-categories__card-tablet {
     grid-column: 6 span;
-    grid-row: 3 span;
-    max-height: 100%;
+    grid-row: 2 span;
   }
-
   .product-categories__card-watch {
-    grid-column: 12 span;
+    grid-column: 6 span;
     grid-row: 1 span;
   }
 }
 
 @media (width <= 576px) {
+  .product-categories__card {
+    padding-inline: 9px;
+  }
+
   .product-categories__text {
     margin-bottom: 28px;
   }
 
   .product-categories__card-laptop {
-    gap: 80px;
+    flex-direction: row;
+    align-items: center;
+    grid-column: 12 span;
+    grid-row: 1 span;
   }
 
   .product-categories__card-phones,
   .product-categories__card-tablet {
+    grid-column: 6 span;
     grid-row: 2 span;
+  }
+  .product-categories__card-watch {
+    grid-column: 12 span;
+    grid-row: 1 span;
   }
 }

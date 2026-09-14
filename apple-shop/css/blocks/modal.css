@@ -13,9 +13,6 @@
   -webkit-transition:
     opacity var(--transition-time),
     visibility var(--transition-time);
-  -o-transition:
-    opacity var(--transition-time),
-    visibility var(--transition-time);
   transition:
     opacity var(--transition-time),
     visibility var(--transition-time);

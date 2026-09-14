@@ -2,7 +2,6 @@
   font-family: var(--font-family);
   font-weight: 400;
   scroll-behavior: smooth;
-  /* height: 10000px; */
 }
 
 .page__body {
@@ -51,10 +50,4 @@ input:focus-visible {
   .section-title {
     font-size: 32px;
   }
-}
-
-@media (width > 576px) {
-}
-
-@media (width <= 576px) {
 }

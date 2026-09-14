@@ -1,6 +1,10 @@
 .search-modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
 }
 
@@ -9,7 +13,6 @@
   min-width: 280px;
   border: 1px solid #c5c5c5;
   border-radius: 100px;
-  /* border-radius: 10px; */
   background: var(--accent-color);
 }
 
@@ -19,6 +22,9 @@
 
 @media (width <= 568px) {
   .search-modal__form {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
